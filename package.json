@@ -1,0 +1,31 @@
+{
+  "name": "jsonl-file",
+  "version": "1.0.0",
+  "description": " Write and read Line Delimited JSON (jsonl) files ",
+  "main": "dist/index.js",
+  "repository": "https://github.com/tmos/jsonl-file",
+  "author": "Tom Canac <contact@tomcanac.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "rollup src/index.js --o dist/index.js --f cjs -w"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "ava": "^0.23.0",
+    "babel": "^6.23.0",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^5.0.0",
+    "rollup": "^0.51.8",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  }
+}
